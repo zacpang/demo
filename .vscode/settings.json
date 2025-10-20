@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "files.eol": "\n",
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true
+}

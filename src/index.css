@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --accent: #2B6CB0;
+  --accent2: #10B981;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--bg); }
+
+.card { @apply bg-white rounded-2xl shadow-soft p-6; }
+.link { @apply text-brandBlue hover:underline; }
+.btn { @apply px-4 py-2 rounded-2xl shadow-sm border border-gray-200 bg-white hover:bg-gray-50; }
+.btn-primary { @apply bg-brandBlue text-white hover:opacity-90; }
+.badge { @apply inline-flex items-center gap-2 text-xs font-medium rounded-full px-3 py-1 bg-gray-100; }
