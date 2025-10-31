@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from "react";
-import { Route, Routes, NavLink } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
 
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const AIWorkbench = lazy(() => import("./pages/AIWorkbench"));
@@ -15,7 +15,7 @@ const nav = [
   { to: "/influencers", label: "达人互动" },
   { to: "/accounts", label: "账户管理" },
   { to: "/stripe-research", label: "Stripe调研" },
-  { to: "/bpn", label: "BPN调研" }
+  { to: "/bpn", label: "BPN调研" },
 ];
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="h-8 w-8 rounded-full bg-brandBlue"></div>
-            <h1 className="text-lg font-semibold">WooshPay Demo Portal</h1>
+            <h1 className="text-lg font-semibold">Demo</h1>
           </div>
           <nav className="flex items-center gap-2">
             {nav.map((n) => (
@@ -58,9 +58,7 @@ export default function App() {
         </Suspense>
       </main>
 
-      <footer className="py-6 text-center text-sm text-gray-500">
-        Demo
-      </footer>
+      <footer className="py-6 text-center text-sm text-gray-500">Demo</footer>
     </div>
   );
 }
