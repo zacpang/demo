@@ -59,7 +59,7 @@ export default function App() {
       </main>
 
       <footer className="py-6 text-center text-sm text-gray-500">
-        Demo • Bright UI • Tailwind • React Router • Cursor Ready
+        Demo
       </footer>
     </div>
   );
